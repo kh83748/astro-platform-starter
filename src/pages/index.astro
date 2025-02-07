@@ -3,18 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
-const explainer = `
-If you're nodding right now, you might be an Alt Copywriter...
-
-I help misfits like us build profitable email empires our way. No corporate BS. No micromanagers. Just raw creative freedom and real results.
+const explainer = `I help misfits like us build profitable email funnels our way. No corporate BS. No micromanagers. No "alignment" meetings. 
 `;
 ---
 
 <Layout title="Welcome to Astro.">
     <ContextAlert class="mb-4" />
-    <h1 class="mb-10">NEVER WORK FOR MICROMANAGERS AGAIN (Here's how to build your own Email Empire instead)</h1>
+    <h1 class="mb-10">NEVER WORK FOR MICROMANAGERS AGAIN</h1>
     <Markdown content={explainer} class="text-lg mb-10" />
     <p class="mb-8">
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Read the Docs</a>
+        <a href="" class="btn btn-lg btn-primary sm:btn-wide">Read the Docs</a>
     </p>
 </Layout>
