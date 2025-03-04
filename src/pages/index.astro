@@ -59,7 +59,18 @@ const explainer = `
 
 <Layout title="Keith's Email List">
   <ContextAlert class="mb-4" />
-  <h1 class="mb-10 text-center">KEITH HOWARD'S EMAIL LIST</h1>
+  
+  <h1 class="mb-10 text-center">
+  JOIN KEITH'S <span class="crossed-text">CULT</span> EMAIL LIST
+</h1>
+
+<style>
+  .crossed-text {
+    text-decoration: line-through;
+    color: #ff0000; /* or any color you prefer */
+    margin-right: 0.2em;
+  }
+</style>
   <!-- Render the form directly -->
   <div set:html={explainer}></div>
 </Layout>
