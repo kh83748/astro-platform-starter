@@ -3,8 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 ---
-import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
 
 const explainer = `
 <form action="https://track.bentonow.com/forms/8f28c1cd2bfd077058022580a1637933/$subscribe?hardened=true" method="POST" enctype="multipart/form-data" class="bento-formkit" id="bento-formkit-olfbsyuh">
@@ -59,22 +57,25 @@ const explainer = `
 
 <Layout title="Keith's Email List">
   <ContextAlert class="mb-4" />
-  
+
   <h1 class="mb-10 text-center">
-  JOIN KEITH'S <span class="crossed-text">CULT</span> EMAIL LIST
-</h1>
+    JOIN KEITH'S <span class="crossed-text">CULT</span> EMAIL LIST
+  </h1>
 
-<style>
-  .crossed-text {
-    text-decoration: line-through;
-    color: #ff0000; /* or any color you prefer */
-    margin-right: 0.2em;
-  }
-</style>
-  <!-- Render the form directly -->
-  <div set:html={explainer}></div>
+  <style>
+    .crossed-text {
+      text-decoration: line-through;
+      color: #ff0000; /* or any color you prefer */
+      margin-right: 0.2em;
+    }
+  </style>
 
-  <footer>
-    <a href="/terms-and-conditions">Terms & Conditions</a> | <a href="/privacy-policy">Privacy Policy</a>
-  </footer>
+  <main>  <!-- Add the main tag here -->
+    <!-- Render the form directly -->
+    <div set:html={explainer}></div>
+
+    <footer>
+      <a href="/terms-and-conditions">Terms & Conditions</a> | <a href="/privacy-policy">Privacy Policy</a>
+    </footer>
+  </main> <!-- Close the main tag here -->
 </Layout>
