@@ -17,7 +17,16 @@ const explainer = `
 <style>#bento-formkit-cuabzpowje { width: 100% !important; line-height:24px !important; max-width: 600px !important; box-sizing: border-box !important; padding: 25px 20px !important; border-radius: 12px !important; background: #fff !important; border: 2px solid rgba(0, 0, 0, 0.15) !important; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1) !important; font-family: gs-inter-2020-11, 'Helvetica Neue', Helvetica, Arial, sans-serif !important; position: relative !important; margin: 0 auto !important; text-align: center !important;}.bento-formkit-headline { font-size: 24px !important; font-weight: bold !important; color: #333 !important; margin-bottom: 10px !important; }.bento-formkit-subheader { font-size: 16px !important; color: #666 !important; margin-bottom: 20px !important; }#bento-formkit-cuabzpowje input[type="text"], #bento-formkit-cuabzpowje input[type="email"], #bento-formkit-cuabzpowje input[type="password"], #bento-formkit-cuabzpowje input[type="number"], #bento-formkit-cuabzpowje input[type="date"], #bento-formkit-cuabzpowje input[type="range"] { display: block !important; width: 100% !important; background-color: #fff !important; border-radius: 12px !important; border: 2px solid #ccc !important; color: #333 !important; cursor: text !important; margin: 0 auto 12px !important; padding: 9px 10px !important; box-sizing: border-box !important; font-size: 16px !important;}#bento-formkit-cuabzpowje input:focus:valid { border-color: green !important; }#bento-formkit-cuabzpowje input:focus:invalid { border-color: red !important; }#bento-formkit-cuabzpowje button { text-align: center !important; background-color: #e91b1b !important; font-weight: 800 !important; color: white !important; padding: 12px 20px !important; margin: 0 auto !important; border: none !important; cursor: pointer !important; width: 100% !important; border-radius: 12px !important; box-sizing: border-box !important; box-shadow: 0 4px 12px 0 rgba(0,0,0,0.1) !important; font-size: 16px !important;} .bento-formkit-disclosure { font-size: 12px !important;color: #666 !important;margin-top: 10px !important;}</style>
 `;
 
- <div style="margin-top: 20px; text-align: center;">
+  
+---
+ 
+
+<Layout title="Keith's Email List">
+    <ContextAlert class="mb-4" />
+    <h1 class="mb-10 text-center">KEITH HOWARD'S EMAIL LIST.</h1>
+    <Markdown content={explainer} class="text-lg mb-10" />
+
+<div style="margin-top: 20px; text-align: center;">
     <a href="/privacy-policy" style="margin-right: 10px;">Privacy Policy</a>
     <a href="/terms-and-conditions">Terms and Conditions</a>
   </div>
@@ -33,13 +42,5 @@ const explainer = `
       text-decoration: underline;
     }
   </style>
----
- 
-
-<Layout title="Keith's Email List">
-    <ContextAlert class="mb-4" />
-    <h1 class="mb-10 text-center">KEITH HOWARD'S EMAIL LIST.</h1>
-    <Markdown content={explainer} class="text-lg mb-10" />
-
 
 </Layout>
